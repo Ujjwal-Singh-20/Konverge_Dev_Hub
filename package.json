@@ -1,0 +1,39 @@
+{
+  "name": "konverge-chat-app",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "backend": "node server.js"
+  },
+  "dependencies": {
+    "@liveblocks/client": "^3.14.1",
+    "@liveblocks/react": "^3.14.1",
+    "@liveblocks/yjs": "^3.14.1",
+    "@monaco-editor/react": "^4.7.0",
+    "clsx": "^2.1.1",
+    "firebase": "^12.10.0",
+    "framer-motion": "^11.11.9",
+    "lucide-react": "^0.453.0",
+    "prismjs": "^1.29.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-syntax-highlighter": "^15.5.0",
+    "socket.io-client": "^4.8.3",
+    "tailwind-merge": "^2.5.4",
+    "yjs": "^13.6.29"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14",
+    "vite": "^5.4.10"
+  }
+}
