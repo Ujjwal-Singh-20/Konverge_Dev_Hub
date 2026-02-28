@@ -9,8 +9,6 @@
  */
 
 const admin = require('firebase-admin');
-const serviceAccount = require("../../../konverge-ps3-firebase-adminsdk-fbsvc-57123c91f6.json");
-
 
 let db = null;
 
@@ -22,7 +20,11 @@ function initFirebase() {
         : undefined;
 
     admin.initializeApp({
-        credential: admin.credential.cert(serviceAccount),
+        credential: admin.credential.cert({
+            projectId: process.env.FIREBASE_PROJECT_ID,
+            clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
+            privateKey: privateKey,
+        }),
     });
 
     db = admin.firestore();
