@@ -1,6 +1,9 @@
 # Konverge
 
-**Konverge** is a next-generation, real-time collaboration platform built entirely around the developer workflow. It eliminates friction by integrating communication, coding, and artificial intelligence into one seamless environment. Designed for teams who need to brainstorm, write code, and iterate rapidly without ever leaving their workspace.
+**Konverge Dev Hub** is a next-generation, real-time collaboration platform built entirely around the developer workflow. It eliminates friction by integrating communication, coding, and artificial intelligence into one seamless environment. Designed for teams who need to brainstorm, write code, and iterate rapidly without ever leaving their workspace.
+
+Frontend deployed link - https://konvergedevhubbackenddeploy.vercel.app/
+Backend Deployed link - https://konverge-dev-hub.onrender.com/
 
 ## 🚀 Major Features
 
