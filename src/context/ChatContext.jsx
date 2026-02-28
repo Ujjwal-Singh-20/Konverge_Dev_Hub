@@ -3,7 +3,7 @@ import React, { createContext, useContext, useState, useEffect, useCallback, use
 const ChatContext = createContext();
 export const useChat = () => useContext(ChatContext);
 
-const API_BASE = 'http://localhost:4000';
+const API_BASE = 'https://konverge-dev-hub.onrender.com';
 
 export const ChatProvider = ({ children }) => {
     // ── Auth state ──────────────────────────────────────────────────────────
