@@ -24,7 +24,10 @@ const server = http.createServer(app);
 // ─── Socket.IO ────────────────────────────────────────────────────────────────
 const io = new Server(server, {
     cors: {
-        origin: process.env.CLIENT_ORIGIN || 'http://localhost:5173',
+        origin: [
+            process.env.CLIENT_ORIGIN || 'http://localhost:5173',
+            'https://konvergedevhubbackenddeploy.vercel.app',
+        ],
         methods: ['GET', 'POST'],
         credentials: true,
     },
@@ -35,7 +38,10 @@ initSockets(io);
 // ─── Express Middleware ────────────────────────────────────────────────────────
 app.use(helmet());
 app.use(cors({
-    origin: process.env.CLIENT_ORIGIN || 'http://localhost:5173',
+    origin: [
+        process.env.CLIENT_ORIGIN || 'http://localhost:5173',
+        'https://konvergedevhubbackenddeploy.vercel.app',
+    ],
     credentials: true,
 }));
 app.use(morgan('dev'));
